@@ -202,22 +202,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const capacityDetails = {
       'Pequeña Escala (hasta 10 m³/día)': {
-        image: '/assets/images/PCAP.webp',
+        image: 'assets/images/PCAP.webp',
         price: 'Desde: 60.000€',
         model: 'PCAP-100'
       },
       'Mediana Escala (10-100 m³/día)': {
-        image: '/assets/images/PCAP.webp',
+        image: 'assets/images/PCAP.webp',
         price: 'Desde: 120.000€',
         model: 'PCAP-100'
       },
       'Grande Escala (100-1000 m³/día)': {
-        image: '/assets/images/PCAP.webp',
+        image: 'assets/images/PCAP.webp',
         price: 'Desde: 250.000€',
         model: 'PCAP-110'
       },
       'Industrial (más de 1000 m³/día)': {
-        image: '/assets/images/PCAP.webp',
+        image: 'assets/images/PCAP.webp',
         price: 'Desde: 500.000€',
         model: 'PCAP-110'
       }
