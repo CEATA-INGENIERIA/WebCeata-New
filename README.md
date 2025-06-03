@@ -110,7 +110,13 @@ WEBCEATA/
 - El configurador guarda datos en `localStorage` y genera un PDF con `jsPDF`. Asegúrate de que las claves de EmailJS (`service_7gmve4s`, `template_9upi8x7`, `template_9ib1w9e`) estén configuradas y sean seguras.
 - El carrusel pasa al siguiente slide cuando un video termina. Para un comportamiento cíclico, añade el atributo `loop` a los `<video>` en `index.html`.
 - Prueba la accesibilidad y rendimiento con [Lighthouse](https://developers.google.com/web/tools/lighthouse) o [WAVE](https://wave.webaim.org/).
-
+## Configuración de EmailJS
+Para modificar la apariencia de los correos enviados por EmailJS (usados en el configurador para enviar formularios), sigue estos pasos:
+1. Crea una cuenta en [EmailJS](https://www.emailjs.com/).
+2. Ve a **Email Services** y crea un nuevo servicio (el actual es `service_7gmve4s`).
+3. En **Email Templates**, edita las plantillas existentes (`template_9upi8x7` y `template_9ib1w9e`) o crea nuevas. Puedes personalizar el diseño, el contenido y los campos dinámicos (como `{{user_name}}`, `{{form_data}}`, etc.).
+4. Actualiza las claves en `js/configurator.js` con el nuevo `serviceID`, `templateID` y tu `userID` (lo encuentras en tu cuenta de EmailJS bajo **Account > API Keys**).
+5. Prueba los envíos desde el configurador para asegurarte de que los correos se envíen correctamente con la nueva apariencia.
 ## Despliegue
 Para desplegar en GitHub Pages:
 1. Asegúrate de que las rutas en `index.html` y `pages/` sean relativas o ajustadas al subdirectorio (ej: `/WebCeata-New/`).
