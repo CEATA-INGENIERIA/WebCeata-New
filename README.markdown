@@ -1,17 +1,10 @@
-# WEBCEATA - CEATA Ingeniería
+WEBCEATA - CEATA Ingeniería
 
-![Estado del Proyecto](https://img.shields.io/badge/Estado-En%20Desarrollo-brightgreen)
-![Licencia](https://img.shields.io/badge/Licencia-MIT-blue)
-
-## Descripción
-WEBCEATA es un sitio web estático para **CEATA Ingeniería**, una empresa dedicada a soluciones innovadoras para la gestión y tratamiento de agua potable y residual. El sitio incluye una página principal con un navbar centrado, un carrusel de videos, una sección de soluciones, un footer detallado, botones flotantes de contacto (teléfono, correo, WhatsApp) y un configurador interactivo para personalizar soluciones de tratamiento de agua. Está construido con HTML, CSS, JavaScript, y utiliza **Bootstrap 5.3.0** y **Font Awesome 5.15.4** para estilos e iconos.
-
-## Demo
-<!-- Descomenta y actualiza si configuras GitHub Pages -->
-<!-- Visita la demo en: [WEBCEATA Demo](https://jvgsg01.github.io/WebCeata) -->
-
-## Estructura de Carpetas
-```
+Descripción
+WEBCEATA es un sitio web estático para CEATA Ingeniería, una empresa dedicada a soluciones innovadoras para la gestión y tratamiento de agua potable y residual. El sitio incluye una página principal con un navbar centrado, un carrusel de videos, una sección de soluciones, un footer detallado, botones flotantes de contacto (teléfono, correo, WhatsApp) y un configurador interactivo para personalizar soluciones de tratamiento de agua. Está construido con HTML, CSS, JavaScript, y utiliza Bootstrap 5.3.0 y Font Awesome 5.15.4 para estilos e iconos.
+Demo
+Visita la demo en: WEBCEATA Demo
+Estructura de Carpetas
 WEBCEATA/
 ├── assets/
 │   ├── footer/
@@ -74,62 +67,65 @@ WEBCEATA/
 ├── index.html                         # Página principal del sitio
 ├── LICENSE.txt                        # Licencia del proyecto (MIT)
 └── README.md                          # Documentación del proyecto
-```
 
-## Requisitos
-- Un navegador web moderno (Chrome, Firefox, Edge, etc.).
-- [Visual Studio Code](https://code.visualstudio.com/) con la extensión **Live Server** para pruebas locales.
-- [Git](https://git-scm.com/) para clonar el repositorio.
-- [Node.js](https://nodejs.org/) y [npm](https://www.npmjs.com/) (opcional, para gestionar dependencias si usas un bundler como Vite).
+Requisitos
 
-## Instalación y Ejecución
-1. Clona el repositorio:
-   ```bash
-   git clone https://github.com/jvgsg01/WebCeata.git
-   ```
-2. Abre el proyecto en Visual Studio Code.
-3. Instala la extensión **Live Server** si no la tienes.
-4. Haz clic derecho en `index.html` o `pages/configurador.html` y selecciona **Open with Live Server** para visualizar el sitio.
-5. Verifica que las imágenes, videos, componentes (footer, botones de contacto) y el configurador funcionen correctamente.
+Un navegador web moderno (Chrome, Firefox, Edge, etc.).
+Visual Studio Code con la extensión Live Server para pruebas locales.
+Git para clonar el repositorio.
+Node.js y npm (opcional, para gestionar dependencias si usas un bundler como Vite).
 
-## Dependencias Externas
-- **Bootstrap 5.3.0**: Para estilos y componentes responsivos (via CDN).
-- **Font Awesome 5.15.4**: Para iconos (via CDN).
-- **jsPDF**: Para generar PDFs en el configurador (incluido via CDN o localmente).
-- **EmailJS**: Para enviar correos desde el formulario de contacto (requiere configuración de claves).
-- Scripts y estilos locales: `js/configurator.js`, `js/pages-common.js`, `js/script.js`, `css/style.css`.
+Instalación y Ejecución
 
-## Desarrollo Futuro
-- Añadir más páginas secundarias en `pages/` (ej: `about.html`, `projects.html`).
-- Mover el navbar a `components/navbar.html` para reutilización.
-- Integrar un sistema de autenticación para el configurador (opcional).
-- Optimizar la carga con un bundler como [Vite](https://vitejs.dev/) y eliminar dependencias no esenciales (ej: Font Awesome).
-- Mejorar la accesibilidad del configurador y el carrusel.
+Clona el repositorio:git clone https://github.com/CEATA-INGENIERIA/WebCeata-New.git
 
-## Notas
-- Las rutas en `index.html`, `footer-component.html`, y los scripts son relativas para funcionar con Live Server. Ajusta las rutas si subes el sitio a un servidor (ej: `/WebCeata/css/style.css` para GitHub Pages).
-- El configurador guarda datos en `localStorage` y genera un PDF con `jsPDF`. Asegúrate de que las claves de EmailJS (`service_7gmve4s`, `template_9upi8x7`, `template_9ib1w9e`) estén configuradas y sean seguras.
-- El carrusel pasa al siguiente slide cuando un video termina. Para un comportamiento cíclico, añade el atributo `loop` a los `<video>` en `index.html`.
-- Prueba la accesibilidad y rendimiento con [Lighthouse](https://developers.google.com/web/tools/lighthouse) o [WAVE](https://wave.webaim.org/).
 
-## Despliegue
+Abre el proyecto en Visual Studio Code.
+Instala la extensión Live Server si no la tienes.
+Haz clic derecho en index.html o pages/configurador.html y selecciona Open with Live Server para visualizar el sitio.
+Verifica que las imágenes, videos, componentes (footer, botones de contacto) y el configurador funcionen correctamente.
+
+Dependencias Externas
+
+Bootstrap 5.3.0: Para estilos y componentes responsivos (via CDN).
+Font Awesome 5.15.4: Para iconos (via CDN).
+jsPDF: Para generar PDFs en el configurador (incluido via CDN o localmente).
+EmailJS: Para enviar correos desde el formulario de contacto (requiere configuración de claves).
+Scripts y estilos locales: js/configurator.js, js/pages-common.js, js/script.js, css/style.css.
+
+Desarrollo Futuro
+
+Añadir más páginas secundarias en pages/ (ej: about.html, projects.html).
+Mover el navbar a components/navbar.html para reutilización.
+Integrar un sistema de autenticación para el configurador (opcional).
+Optimizar la carga con un bundler como Vite y eliminar dependencias no esenciales (ej: Font Awesome).
+Mejorar la accesibilidad del configurador y el carrusel.
+
+Notas
+
+Las rutas en index.html, footer-component.html, y los scripts son relativas para funcionar con Live Server. Ajusta las rutas si subes el sitio a un servidor (ej: /WebCeata-New/css/style.css para GitHub Pages).
+El configurador guarda datos en localStorage y genera un PDF con jsPDF. Asegúrate de que las claves de EmailJS (service_7gmve4s, template_9upi8x7, template_9ib1w9e) estén configuradas y sean seguras.
+El carrusel pasa al siguiente slide cuando un video termina. Para un comportamiento cíclico, añade el atributo loop a los <video> en index.html.
+Prueba la accesibilidad y rendimiento con Lighthouse o WAVE.
+
+Despliegue
 Para desplegar en GitHub Pages:
-1. Asegúrate de que las rutas en `index.html` y `pages/` sean relativas o ajustadas al subdirectorio (ej: `/WebCeata/`).
-2. Configura GitHub Pages en la configuración del repositorio (rama `main`, carpeta raíz).
-3. Accede al sitio en `https://jvgsg01.github.io/WebCeata`.
-4. Actualiza la sección **Demo** con el enlace generado.
 
-## Contacto
+Asegúrate de que las rutas en index.html y pages/ sean relativas o ajustadas al subdirectorio (ej: /WebCeata-New/).
+Configura GitHub Pages en la configuración del repositorio (rama main, carpeta raíz).
+Accede al sitio en https://ceata-ingenieria.github.io/WebCeata-New.
+Actualiza la sección Demo con el enlace generado.
+
+Contacto
 Para dudas o sugerencias, contacta a CEATA Ingeniería:
-- **Teléfono**: (+34) 946 29 11 83
-- **Correo**: ceataingenieria@ceataingenieria.com
-- **WhatsApp**: [Enviar mensaje](https://wa.me/34946291183)
 
-## Créditos
+Teléfono: (+34) 946 29 11 83
+Correo: ceataingenieria@ceataingenieria.com
+WhatsApp: Enviar mensaje
+
+Créditos
 Desarrollado por CEATA Ingeniería con colaboración técnica.
+Licencia
+Este proyecto está bajo la Licencia MIT.
 
-## Licencia
-Este proyecto está bajo la [Licencia MIT](LICENSE.txt).
-
----
-Última actualización: 03 de junio de 2025, 01:06 PM CEST
+Última actualización: 03 de junio de 2025, 01:53 PM CEST
