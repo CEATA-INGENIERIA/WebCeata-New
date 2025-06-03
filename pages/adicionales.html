@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Selección de opciones adicionales para soluciones de CEATA Ingeniería.">
+  <title>Opciones Adicionales - CEATA Ingeniería</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+  
+<body id="configurator-page">
+  <!-- Navbar centrado -->
+  <div id="navbar">
+    <div class="logo-container">
+      <img src="../assets/images/logo.png" alt="Logo CEATA">
+    </div>
+    <!-- Botón hamburguesa para móviles -->
+   <div class="menu-toggle" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <nav class="navbar" style="justify-content: center; flex-direction: column;">
+      <ul class="nav-links" style="margin-top: 10px;">
+        <li><a href="../index.html">CEATA</a></li>
+        <li class="dropdown">
+          <a href="#">Gestión del agua</a>
+          <div class="dropdown-content">
+            <div class="dropdown-item">
+              <div class="image-wrapper">
+                <img src="../assets/images/submenua.webp" alt="Asesoramiento técnico">
+              </div>
+              <a href="#">Asesoramiento técnico</a>
+            </div>
+            <div class="dropdown-item">
+              <div class="image-wrapper">
+                <img src="../assets/images/submenub.webp" alt="Calidad del agua">
+              </div>
+              <a href="#">Calidad del agua</a>
+            </div>
+            <div class="dropdown-item">
+              <div class="image-wrapper">
+                <img src="../assets/images/submenuc.webp" alt="Compromisos y Valores">
+              </div>
+              <a href="#">Compromisos y Valores</a>
+            </div>
+            <div class="dropdown-item">
+              <div class="image-wrapper">
+                <img src="../assets/images/submenud.webp" alt="Calidad y Medioambiente">
+              </div>
+              <a href="#">Calidad y Medioambiente</a>
+            </div>
+            <div class="dropdown-item">
+              <div class="image-wrapper">
+                <img src="../assets/images/submenue.webp" alt="Consultoría e ingeniería">
+              </div>
+              <a href="#">Consultoría e ingeniería</a>
+            </div>
+            <div class="dropdown-item">
+              <div class="image-wrapper">
+                <img src="../assets/images/submenuf.webp" alt="Digitalización/SmartWater">
+              </div>
+              <a href="#">Digitalización/SmartWater</a>
+            </div>
+            <div class="dropdown-item">
+              <div class="image-wrapper">
+                <img src="../assets/images/submenug.webp" alt="Asistencia postventa">
+              </div>
+              <a href="#">Asistencia postventa</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="#">I+D+I</a></li>
+           <li class="dropdown">
+          <a href="#">Soluciones</a>
+          <div class="dropdown-content">
+            <div class="dropdown-inner">
+              <a href="configurador.html" class="cta-configurator"> Personaliza ahora</a>
+              <div class="dropdown-item">
+                <div class="image-wrapper">
+                  <img src="../assets/images/Agua-Potable.webp" alt="Agua potable">
+                </div>
+                <a href="agua-potable.html">Agua potable</a>
+              </div>
+              <div class="dropdown-item">
+                <div class="image-wrapper">
+                  <img src="../assets/images/Agua-regenerada.webp" alt="Agua regenerada">
+                </div>
+                <a href="agua-regenerada.html">Agua regenerada</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="#">Sectores</a></li>
+        <li><a href="#">Proyectos</a></li>
+        <li><a href="#">Redes Sociales</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Sección de barra de progreso -->
+  <div class="progress-bar">
+    <div class="step" data-step="1">
+      <span class="step-circle">1</span>
+      <span class="step-label">Aplicación</span>
+    </div>
+    <div class="step-connector"></div>
+    <div class="step" data-step="2">
+      <span class="step-circle">2</span>
+      <span class="step-label">Fuente</span>
+    </div>
+    <div class="step-connector"></div>
+    <div class="step" data-step="3">
+      <span class="step-circle">3</span>
+      <span class="step-label">Capacidad</span>
+    </div>
+    <div class="step-connector"></div>
+    <div class="step" data-step="4">
+      <span class="step-circle">4</span>
+      <span class="step-label">Caracterización</span>
+    </div>
+    <div class="step-connector"></div>
+    <div class="step" data-step="5">
+      <span class="step-circle">5</span>
+      <span class="step-label">Adicionales</span>
+    </div>
+    <div class="step-connector"></div>
+    <div class="step" data-step="6">
+      <span class="step-circle">6</span>
+      <span class="step-label">Resultado</span>
+    </div>
+  </div>
+
+  <!-- Sección de opciones adicionales -->
+<section class="configurator-options">
+  <div class="options-container">
+    <h1>Opciones Adicionales</h1>
+    <p>Selecciona las opciones adicionales para tu solución (opcional):</p>
+    <form id="additional-form">
+      <div class="options-grid additional-grid">
+        <div class="option-item">
+          <label for="condiciones-agua">Condiciones del Agua de Fuente:</label>
+          <select id="condiciones-agua" name="condiciones-agua">
+            <option value="">Selecciona una opción</option>
+            <option value="Origen natural (río/lago)">Origen natural (río/lago)</option>
+            <option value="Origen subterráneo (pozo)">Origen subterráneo (pozo)</option>
+            <option value="Agua salada (marina)">Agua salada (marina)</option>
+            <option value="Agua tratada previamente">Agua tratada previamente</option>
+          </select>
+        </div>
+        <div class="option-item">
+          <label for="espacio-disponible">Espacio Disponible para la Instalación:</label>
+          <select id="espacio-disponible" name="espacio-disponible">
+            <option value="">Selecciona una opción</option>
+            <option value="Terreno plano (>500 m²)">Terreno plano (>500 m²)</option>
+            <option value="Terreno irregular (200-500 m²)">Terreno irregular (200-500 m²)</option>
+            <option value="Espacio reducido (<200 m²)">Espacio reducido (<200 m²)</option>
+            <option value="Interior (edificio)">Interior (edificio)</option>
+          </select>
+        </div>
+        <div class="option-item">
+          <label for="conexiones-servicios">Conexiones y Servicios Disponibles:</label>
+          <select id="conexiones-servicios" name="conexiones-servicios">
+            <option value="">Selecciona una opción</option>
+            <option value="Red de distribución existente">Red de distribución existente</option>
+            <option value="Servicios sanitarios disponibles">Servicios sanitarios disponibles</option>
+            <option value="Sin conexiones (instalación aislada)">Sin conexiones (instalación aislada)</option>
+            <option value="Conexión parcial (electricidad)">Conexión parcial (electricidad)</option>
+          </select>
+        </div>
+        <div class="option-item">
+          <label for="mantenimiento-postventa">Mantenimiento y Servicio Postventa:</label>
+          <select id="mantenimiento-postventa" name="mantenimiento-postventa">
+            <option value="">Selecciona una opción</option>
+            <option value="Mantenimiento anual con garantía">Mantenimiento anual con garantía</option>
+            <option value="Soporte técnico 24/7">Soporte técnico 24/7</option>
+            <option value="Mantenimiento bianual básico">Mantenimiento bianual básico</option>
+            <option value="Sin servicio postventa">Sin servicio postventa</option>
+          </select>
+        </div>
+      </div>
+      <div class="button-container">
+        <a href="caracterizacion-agua.html" class="back-btn">Atrás</a>
+        <button type="submit" class="configurator-btn">Continuar</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+
+  <!-- Botones Flotantes de Contacto -->
+  <div id="contacto"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/pages-common.js" defer></script>
+  <script src="../js/configurator.js" defer></script>
+</body>
+</html>

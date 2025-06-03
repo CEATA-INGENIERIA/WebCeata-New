@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Configurador de soluciones de CEATA Ingeniería para la gestión y tratamiento de agua potable y residual.">
+  <title>Configurador - CEATA Ingeniería</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body id="configurator-page">
+  <!-- Navbar centrado -->
+  <div id="navbar">
+    <div class="logo-container">
+      <img src="../assets/images/logo.png" alt="Logo CEATA">
+    </div>
+     <!-- Botón hamburguesa para móviles -->
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <nav class="navbar" style="justify-content: center; flex-direction: column;">
+      <ul class="nav-links" style="margin-top: 10px;">
+        <li><a href="../index.html">CEATA</a></li>
+        <li class="dropdown">
+          <a href="#">Gestión del agua</a>
+          <div class="dropdown-content">
+            <div class="dropdown-item">
+              <div class="image-wrapper">
+                <img src="../assets/images/submenua.webp" alt="Asesoramiento técnico">
+              </div>
+              <a href="#">Asesoramiento técnico</a>
+            </div>
+            <div class="dropdown-item">
+              <div class="image-wrapper">
+                <img src="../assets/images/submenub.webp" alt="Calidad del agua">
+              </div>
+              <a href="#">Calidad del agua</a>
+            </div>
+            <div class="dropdown-item">
+              <div class="image-wrapper">
+                <img src="../assets/images/submenuc.webp" alt="Compromisos y Valores">
+              </div>
+              <a href="#">Compromisos y Valores</a>
+            </div>
+            <div class="dropdown-item">
+              <div class="image-wrapper">
+                <img src="../assets/images/submenud.webp" alt="Calidad y Medioambiente">
+              </div>
+              <a href="#">Calidad y Medioambiente</a>
+            </div>
+            <div class="dropdown-item">
+              <div class="image-wrapper">
+                <img src="../assets/images/submenue.webp" alt="Consultoría e ingeniería">
+              </div>
+              <a href="#">Consultoría e ingeniería</a>
+            </div>
+            <div class="dropdown-item">
+              <div class="image-wrapper">
+                <img src="../assets/images/submenuf.webp" alt="Digitalización/SmartWater">
+              </div>
+              <a href="#">Digitalización/SmartWater</a>
+            </div>
+            <div class="dropdown-item">
+              <div class="image-wrapper">
+                <img src="../assets/images/submenug.webp" alt="Asistencia postventa">
+              </div>
+              <a href="#">Asistencia postventa</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="#">I+D+I</a></li>
+           <li class="dropdown">
+          <a href="#">Soluciones</a>
+          <div class="dropdown-content">
+            <div class="dropdown-inner">
+              <a href="configurador.html" class="cta-configurator">Perzonaliza Ahora</a>
+              <div class="dropdown-item">
+                <div class="image-wrapper">
+                  <img src="../assets/images/Agua-Potable.webp" alt="Agua potable">
+                </div>
+                <a href="agua-potable.html">Agua potable</a>
+              </div>
+              <div class="dropdown-item">
+                <div class="image-wrapper">
+                  <img src="../assets/images/Agua-regenerada.webp" alt="Agua regenerada">
+                </div>
+                <a href="agua-regenerada.html">Agua regenerada</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="#">Sectores</a></li>
+        <li><a href="#">Proyectos</a></li>
+        <li><a href="#">Redes Sociales</a></li>
+      </ul>
+    </nav>
+  </div>
+  
+  <!-- Sección principal con opciones -->
+  <section class="configurator-options">
+    <div class="options-container">
+      <h1>Configura tu Solución</h1>
+      <p>Selecciona el tipo de tratamiento de agua que necesitas:</p>
+      <div class="options-principal">
+        <div class="option-item">
+          <div class="option-image" style="background-image: url('../assets/images/Agua-Potable.webp');"></div>
+          <h2>Agua Potable</h2>
+          <a href="../pages/tratamiento.html" class="configurator-btn">Configurar Agua Potable</a>
+        </div>
+        <div class="option-item">
+          <div class="option-image" style="background-image: url('../assets/images/Agua-regenerada.webp');"></div>
+          <h2>Agua Regenerada</h2>
+          <a href="../pages/tratamiento.html" class="configurator-btn">Configurar Agua Regenerada</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+
+  <!-- Botones Flotantes de Contacto -->
+  <div id="contacto"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/pages-common.js" defer></script>
+</body>
+</html> 

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Configurador de soluciones de CEATA Ingeniería para la gestión y tratamiento de agua potable y residual.">
+  <title>Configurador de Agua Regenerada - CEATA Ingeniería</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- Navbar centrado -->
+  <div id="navbar">
+    <div class="logo-container">
+      <img src="../assets/images/logo.png" alt="Logo CEATA">
+    </div>
+ <!-- Botón hamburguesa para móviles -->
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <nav class="navbar" style="justify-content: center; flex-direction: column;">
+      <ul class="nav-links" style="margin-top: 10px;">
+        <li><a href="../index.html">CEATA</a></li>
+        <li class="dropdown">
+          <a href="#">Gestión del agua</a>
+          <div class="dropdown-content">
+            <div class="dropdown-item">
+              <div class="image-wrapper">
+                <img src="../assets/images/submenua.webp" alt="Asesoramiento técnico">
+              </div>
+              <a href="#">Asesoramiento técnico</a>
+            </div>
+            <div class="dropdown-item">
+              <div class="image-wrapper">
+                <img src="../assets/images/submenub.webp" alt="Calidad del agua">
+              </div>
+              <a href="#">Calidad del agua</a>
+            </div>
+            <div class="dropdown-item">
+              <div class="image-wrapper">
+                <img src="../assets/images/submenuc.webp" alt="Compromisos y Valores">
+              </div>
+              <a href="#">Compromisos y Valores</a>
+            </div>
+            <div class="dropdown-item">
+              <div class="image-wrapper">
+                <img src="../assets/images/submenud.webp" alt="Calidad y Medioambiente">
+              </div>
+              <a href="#">Calidad y Medioambiente</a>
+            </div>
+            <div class="dropdown-item">
+              <div class="image-wrapper">
+                <img src="../assets/images/submenue.webp" alt="Consultoría e ingeniería">
+              </div>
+              <a href="#">Consultoría e ingeniería</a>
+            </div>
+            <div class="dropdown-item">
+              <div class="image-wrapper">
+                <img src="../assets/images/submenuf.webp" alt="Digitalización/SmartWater">
+              </div>
+              <a href="#">Digitalización/SmartWater</a>
+            </div>
+            <div class="dropdown-item">
+              <div class="image-wrapper">
+                <img src="../assets/images/submenug.webp" alt="Asistencia postventa">
+              </div>
+              <a href="#">Asistencia postventa</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="#">I+D+I</a></li>
+           <li class="dropdown">
+          <a href="#">Soluciones</a>
+          <div class="dropdown-content">
+            <div class="dropdown-inner">
+              <a href="configurador.html" class="cta-configurator">Perzonaliza Ahora</a>
+              <div class="dropdown-item">
+                <div class="image-wrapper">
+                  <img src="../assets/images/Agua-Potable.webp" alt="Agua potable">
+                </div>
+                <a href="agua-potable.html">Agua potable</a>
+              </div>
+              <div class="dropdown-item">
+                <div class="image-wrapper">
+                  <img src="../assets/images/Agua-regenerada.webp" alt="Agua regenerada">
+                </div>
+                <a href="agua-regenerada.html">Agua regenerada</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="#">Sectores</a></li>
+        <li><a href="#">Proyectos</a></li>
+        <li><a href="#">Redes Sociales</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+  <!-- Imagen de fondo con título y mensaje destacado -->
+  <section class="header-image-regenerada">
+    <div class="header-overlay">
+      <h1 class="header-title">Soluciones para el tratamiento de agua regenerada</h1>
+    </div>
+  </section>
+
+  <!-- Introducción al tratamiento de agua regenerada con card -->
+  <section class="intro-section">
+    <div class="intro-container">
+      <div class="intro-content">
+        <h2>Reutilización eficiente del agua para un impacto ambiental positivo</h2>
+        <p>En CEATA Ingeniería, ofrecemos soluciones avanzadas para el tratamiento de agua regenerada, un recurso clave para la sostenibilidad hídrica. Nuestra máquina de tratamiento de agua regenerada utiliza tecnologías de vanguardia para purificar aguas residuales, eliminando contaminantes complejos y logrando un elevado grado de pureza. Este proceso permite la reutilización del agua en aplicaciones industriales, agrícolas o urbanas, maximizando el valor de cada gota y reduciendo el impacto ambiental.</p>
+        <p>Con un enfoque en la eficiencia operativa y el cumplimiento de los estándares de calidad más estrictos, nuestras soluciones son ideales para comunidades, industrias y municipios que buscan gestionar el agua de manera circular y sostenible. Además, ofrecemos soporte técnico especializado y asistencia postventa para garantizar el mejor rendimiento de tu sistema.</p>
+        <a href="configurador.html" class="configurator-btn">Configura tu Solución de Agua Regenerada</a>
+      </div>
+      <div class="intro-card">
+        <div class="card">
+          <div class="card-body text-center">
+            <i class="fas fa-recycle" style="font-size: 2rem; color: #00695c;"></i>
+            <h5 class="card-title">¿Buscas soluciones sostenibles?</h5>
+            <p class="card-text">Contáctenos para explorar cómo nuestras tecnologías de agua regenerada pueden ayudarte a optimizar recursos.</p>
+            <a href="https://wa.me/1234567890?text=Hola,%20quiero%20saber%20más%20sobre%20sus%20soluciones%20de%20agua%20regenerada." class="btn btn-primary" target="_blank">Contactar</a>
+            <a href="../docs/catalogo-es.pdf" class="btn btn-secondary" download>Descargar Folleto</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Beneficios clave -->
+<!-- Beneficios clave en carrusel -->
+  <section class="benefits-section">
+    <div class="benefits-container">
+      <h2>¿Por qué elegir nuestras soluciones de agua regenerada?</h2>
+      <div class="benefits-carousel">
+        <div class="carousel-slides">
+          <!-- Slide 1: Aguas Superficiales -->
+          <div class="carousel-slide">
+            <h3 class="slide-title">Soluciones para Aguas Superficiales</h3>
+            <div class="benefits-grid">
+              <div class="benefit-item">
+                <i class="fas fa-cloud"></i>
+                <h3>Proceso de pre-ozonización</h3>
+                <p>Eficiencia en la eliminación de microcontaminantes inorgánicos y materia orgánica, ayudando a mejorar la eficiencia del proceso de coagulación–floculación posterior, y como desinfectante de microorganismos biológicos (algas, virus, bacterias, …).</p>
+              </div>
+              <div class="benefit-item">
+                <i class="fas fa-water"></i>
+                <h3>Dosificación de coagulantes y floculantes poliméricos de última generación</h3>
+                <p>En los procesos de coagulación y floculación, facilitándose la extracción de la materia orgánica y de los sólidos suspendidos presentes en el agua, con menores dosis requeridas.</p>
+              </div>
+              <div class="benefit-item">
+                <i class="fas fa-layer-group"></i>
+                <h3>Filtros de carbón activo granular</h3>
+                <p>Específicos por sus propiedades fisicoquímicas, empleados como última barrera para eliminar gran variedad de compuestos inorgánicos y orgánicos, reduciendo el riesgo químico.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 2: Aguas Subterráneas -->
+          <div class="carousel-slide">
+            <h3 class="slide-title">Soluciones para Aguas Subterráneas</h3>
+            <div class="benefits-grid">
+              <div class="benefit-item">
+                <i class="fas fa-filter"></i>
+                <h3>Ultrafiltración</h3>
+                <p>Eliminación eficiente, a través de una barrera física, de sólidos suspendidos, coloides, macromoléculas, virus y bacterias con módulos compactos de filtración por membranas.</p>
+              </div>
+              <div class="benefit-item">
+                <i class="fas fa-bong"></i>
+                <h3>Procesos de oxidación química avanzada</h3>
+                <p>(Ozono, radiación ultravioleta, etc.) en las etapas intermedias del tratamiento, empleados por su alta eficiencia en la degradación de los contaminantes orgánicos, aumentando su biodegradabilidad y eliminando su toxicidad.</p>
+              </div>
+              <div class="benefit-item">
+                <i class="fas fa-shield-virus"></i>
+                <h3>Desinfección final</h3>
+                <p>Eliminación de patógenos del agua tratada utilizando desinfectantes clorados en estricto cumplimiento del RD 3/2023.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="arrow left" onclick="prevSlide()">&#10094;</span>
+        <span class="arrow right" onclick="nextSlide()">&#10095;</span>
+      </div>
+    </div>
+  </section>
+  <!-- Video de YouTube -->
+  <section class="video-section">
+    <div class="video-container">
+      <h2>Conoce más sobre el Tratamiento de Agua Regenerada</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/HOtOtYdYsoM" title="Tratamiento de agua potable" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+
+  <!-- Botones Flotantes de Contacto -->
+  <div id="contacto"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/pages-common.js" defer></script>
+</body>
+</html>
