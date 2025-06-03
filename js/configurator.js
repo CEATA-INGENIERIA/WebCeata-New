@@ -499,7 +499,7 @@ document.addEventListener('DOMContentLoaded', () => {
           console.log('Correo a la empresa enviado con éxito');
           alert('¡Configuración enviada con éxito! Pronto nos pondremos en contacto contigo.');
           localStorage.removeItem('configData');
-          window.location.href = '/index.html';
+          window.location.href = '../index.html';
         })
         .catch(error => {
           console.error('Error al enviar el correo:', error);
