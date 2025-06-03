@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CEATA Ingeniería: Soluciones innovadoras para la gestión y tratamiento de agua potable y residual.">
+  <title>CEATA Ingeniería - Gestión del Agua</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  
+</head>
+<body>
+  <!-- Navbar centrado -->
+  <div id="navbar">
+    <div class="logo-container">
+      <img src="assets/images/logo.png" alt="Logo CEATA">
+    </div>
+    <!-- Botón hamburguesa para móviles -->
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <nav class="navbar" style="justify-content: center; flex-direction: column;">
+      <ul class="nav-links" style="margin-top: 10px;">
+        <li><a href="index.html">CEATA</a></li>
+        <li class="dropdown">
+          <a href="#">Gestión del agua</a>
+          <div class="dropdown-content">
+            <div class="dropdown-item">
+              <div class="image-wrapper">
+                <img src="assets/images/submenua.webp" alt="Asesoramiento técnico">
+              </div>
+              <a href="#">Asesoramiento técnico</a>
+            </div>
+            <div class="dropdown-item">
+              <div class="image-wrapper">
+                <img src="assets/images/submenub.webp" alt="Calidad del agua">
+              </div>
+              <a href="#">Calidad del agua</a>
+            </div>
+            <div class="dropdown-item">
+              <div class="image-wrapper">
+                <img src="assets/images/submenuc.webp" alt="Compromisos y Valores">
+              </div>
+              <a href="#">Compromisos y Valores</a>
+            </div>
+            <div class="dropdown-item">
+              <div class="image-wrapper">
+                <img src="assets/images/submenud.webp" alt="Calidad y Medioambiente">
+              </div>
+              <a href="#">Calidad y Medioambiente</a>
+            </div>
+            <div class="dropdown-item">
+              <div class="image-wrapper">
+                <img src="assets/images/submenue.webp" alt="Consultoría e ingeniería">
+              </div>
+              <a href="#">Consultoría e ingeniería</a>
+            </div>
+            <div class="dropdown-item">
+              <div class="image-wrapper">
+                <img src="assets/images/submenuf.webp" alt="Digitalización/SmartWater">
+              </div>
+              <a href="#">Digitalización/SmartWater</a>
+            </div>
+            <div class="dropdown-item">
+              <div class="image-wrapper">
+                <img src="assets/images/submenug.webp" alt="Asistencia postventa">
+              </div>
+              <a href="#">Asistencia postventa</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="#">I+D+I</a></li>
+        <li class="dropdown">
+          <a href="#">Soluciones</a>
+          <div class="dropdown-content">
+            <div class="dropdown-inner">
+              <a href="./pages/configurador.html" class="cta-configurator">Personaliza Ahora</a>
+              <div class="dropdown-item">
+                <div class="image-wrapper">
+                  <img src="../assets/images/Agua-Potable.webp" alt="Agua potable">
+                </div>
+                <a href="./pages/agua-potable.html">Agua potable</a>
+              </div>
+              <div class="dropdown-item">
+                <div class="image-wrapper">
+                  <img src="../assets/images/agua-regenerada.webp" alt="Agua regenerada">
+                </div>
+                <a href="./pages/agua-regenerada.html">Agua regenerada</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="#">Sectores</a></li>
+        <li><a href="#">Proyectos</a></li>
+        <li><a href="#">Redes Sociales</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Carrusel -->
+  <div class="carousel-container">
+  <!-- Slide 1 -->
+  <div class="slide active">
+  <video src="assets/images/PrimerCarrusel.mp4" autoplay muted></video>
+  <div class="overlay overlay-inicio">
+    <h1 class="fade-in">El estrés hídrico no es un problema del futuro <br>  ¡ES AHORA!</h1>
+    <p id="text-slide-1" class="slide-left"></p>
+    <button class="fade-in">Conoce la empresa</button>
+  </div>
+  </div>
+
+  <!-- Slide 2 -->
+  <div class="slide">
+  <video src="assets/images/SegundoCarrusel.mp4" autoplay muted></video>
+  <div class="overlay overlay-general">
+    <h1 class="fade-in">Impulsamos el futuro sostenible del agua</h1>
+    <p id="text-slide-2" class="slide-left"></p>
+    <button class="fade-in">Conoce nuestros proyectos</button>
+  </div>
+  </div>
+
+  <!-- Slide 3 -->
+  <div class="slide">
+  <video src="assets/images/TercerCarrusel.mp4" autoplay muted></video>
+  <div class="overlay overlay-general">
+    <h1 class="fade-in">El agua es parte de tu negocio</h1>
+    <p id="text-slide-3" class="slide-left"></p>
+    <a href="pages/configurador.html" class="boton-estilo fade-in">Explora nuestras soluciones</a>
+    </div>
+  </div>
+
+  <!-- Slide 4 -->
+  <div class="slide">
+  <video src="assets/images/CuartoCarrusel.mp4" autoplay muted></video>
+  <div class="overlay overlay-final">
+    <h1 class="fade-in">El poder del agua<br>El poder de la vida<br>Cada gota cuenta </h1>
+    
+  </div>
+  </div>
+
+    <!-- Flechas -->
+    <span class="arrow left" onclick="prevSlide()">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-arrow">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+      </svg>
+    </span>
+    <span class="arrow right" onclick="nextSlide()">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-arrow">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+      </svg>
+    </span>
+    <!-- Gotas -->
+    <div class="bottom-controls">
+      <div class="drop-indicator" onclick="goToSlide(0)">
+        <div class="fill"></div>
+        <svg class="drop-icon" viewBox="0 0 24 24">
+          <path d="M12 2C12 2 5 9.1 5 14a7 7 0 0014 0c0-4.9-7-12-7-12z"/>
+        </svg>
+      </div>
+      <div class="drop-indicator" onclick="goToSlide(1)">
+        <div class="fill"></div>
+        <svg class="drop-icon" viewBox="0 0 24 24">
+          <path d="M12 2C12 2 5 9.1 5 14a7 7 0 0014 0c0-4.9-7-12-7-12z"/>
+        </svg>
+      </div>
+      <div class="drop-indicator" onclick="goToSlide(2)">
+        <div class="fill"></div>
+        <svg class="drop-icon" viewBox="0 0 24 24">
+          <path d="M12 2C12 2 5 9.1 5 14a7 7 0 0014 0c0-4.9-7-12-7-12z"/>
+        </svg>
+      </div>
+      <div class="drop-indicator" onclick="goToSlide(3)">
+        <div class="fill"></div>
+        <svg class="drop-icon" viewBox="0 0 24 24">
+          <path d="M12 2C12 2 5 9.1 5 14a7 7 0 0014 0c0-4.9-7-12-7-12z"/>
+        </svg>
+      </div>
+      <button class="pause-btn" onclick="togglePlay()" id="playPauseBtn">
+        <svg id="playPauseIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="18" height="18">
+          <path d="M6 4h4v16H6zm8 0h4v16h-4z"/>
+        </svg>
+      </button>
+    </div>
+    </div>
+
+  <!-- Soluciones -->
+  <section class="home-soluciones">
+    <div class="home-soluciones-contenido">
+      <div class="home-soluciones-texto">
+        <h2>
+          Soluciones innovadoras <br>
+          para la gestión y/o el <br>
+          tratamiento de agua <br>
+          potable y residual
+        </h2>
+        <ul>
+          <li>Eliminación de los contaminantes más complejos en el agua.</li>
+          <li>Soluciones a medida para cada desafío.</li>
+          <li>Máxima eficiencia operativa, reduce costes operativos.</li>
+          <li>Cumple los estándares de calidad y sostenibilidad más estrictos.</li>
+        </ul>
+        <div class="home-soluciones-botones">
+          <a href="pages/configurador.html">Nuestras Soluciones</a>
+          <div class="boton-descarga-fancy">
+            <a href="docs/catalogo-es.pdf" class="button" download>
+              <span class="button__text">Catálogo</span>
+              <span class="button__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" class="svg">
+                  <path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path>
+                  <path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path>
+                  <path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,0,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path>
+                </svg>
+              </span>
+            </a>
+          </div>
+          <div class="boton-descarga-fancy">
+            <a href="docs/catalogo-en.pdf" class="button" download>
+              <span class="button__text">Brochure</span>
+              <span class="button__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" class="svg">
+                  <path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path>
+                  <path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path>
+                  <path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,0,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path>
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="home-soluciones-imagenes-grid">
+        <div class="img-wrapper">
+          <img src="assets/images/CiudadDos.webp" alt="Ciudad">
+          <span class="hover-text">Soluciones inteligentes para ciudades en crecimiento
+          </span>
+        </div>
+        <div class="img-wrapper">
+          <img src="assets/images/PuebloDos.webp" alt="Pueblo">
+          <span class="hover-text">Soluciones avanzadas que operan en comunidades rurales</span>
+        </div>
+        <div class="img-wrapper">
+          <img src="assets/images/Industrial.webp" alt="Industrial">
+          <span class="hover-text">Maxima eficiencia operativa en entornos industriales</span>
+        </div>
+        <div class="img-wrapper">
+          <img src="assets/images/Rural3.webp" alt="Rural">
+          <span class="hover-text">Transformación ecologica en zonas agricolas</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+
+  <!-- Botones Flotantes de Contacto -->
+  <div id="contacto"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/script.js" defer></script>
+
+</body>
+</html>
